@@ -8425,10 +8425,10 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-black {
+/* .bg-black {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
-}
+} */
 
 .bg-white {
   --bs-bg-opacity: 1;
@@ -12084,7 +12084,7 @@ body {
       rgba(0, 0, 0, 0.5) 75%,
       #000 100%
     ),
-    url('../assets/img/bg-signup.jpg');
+    url('../assets/img/Switzerland-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12144,5 +12144,5 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 2rem 0 15rem;
 }
