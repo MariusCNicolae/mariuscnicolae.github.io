@@ -240,6 +240,8 @@ blockquote {
 b,
 strong {
   font-weight: bolder;
+  font-weight: 700;
+  color: #64a19d;
 }
 
 small,
@@ -8239,6 +8241,9 @@ fieldset:disabled .btn {
   text-align: right !important;
 }
 
+.text-center-masthead {
+  text-align: left !important;
+}
 .text-center {
   text-align: center !important;
 }
@@ -11951,12 +11956,12 @@ body {
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 0.1rem 0.3rem;
   font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 80%;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.15rem;
   border: 0;
 }
@@ -11973,7 +11978,7 @@ body {
       rgba(0, 0, 0, 0.7) 75%,
       #000 100%
     ),
-    url('../assets/img/desk-unsplash.jpg');
+    url('../assets/img/switzerland-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12017,8 +12022,8 @@ body {
   }
   .masthead h2,
   .masthead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
+    max-width: 100%;
+    font-size: 2.25rem;
   }
 }
 
@@ -12039,7 +12044,7 @@ body {
       rgba(0, 0, 0, 0.7) 75%,
       #000 100%
     ),
-    url('../assets/img/headset-unsplash.jpg');
+    url('../assets/img/houses near mountain-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12084,7 +12089,7 @@ body {
       rgba(0, 0, 0, 0.5) 75%,
       #000 100%
     ),
-    url('../assets/img/switzerland-unsplash.jpg');
+    url('../assets/img/blue world map-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
