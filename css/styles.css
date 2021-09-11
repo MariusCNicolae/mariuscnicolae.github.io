@@ -273,7 +273,7 @@ sup {
 
 a {
   color: #64a19d;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #50817e;
@@ -8244,6 +8244,10 @@ fieldset:disabled .btn {
 .text-center-masthead {
   text-align: left !important;
 }
+
+.text-center-about {
+  text-align: left !important;
+}
 .text-center {
   text-align: center !important;
 }
@@ -12023,7 +12027,7 @@ body {
   .masthead h2,
   .masthead .h2 {
     max-width: 100%;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
   }
 }
 
