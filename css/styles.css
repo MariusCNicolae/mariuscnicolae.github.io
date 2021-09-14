@@ -637,8 +637,8 @@ progress {
 }
 
 .img-fluid {
-  max-width: max-content;
-  height: 300px;
+  max-width: 100%;
+  height: auto;
 }
 
 .img-thumbnail {
@@ -8434,10 +8434,10 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-/* .bg-black {
+.bg-black-projects {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
-} */
+}
 
 .bg-white {
   --bs-bg-opacity: 1;
@@ -10268,7 +10268,7 @@ fieldset:disabled .btn {
   }
 
   .mb-lg-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: 3rem !important;
   }
 
   .mb-lg-1 {
