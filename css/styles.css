@@ -128,7 +128,7 @@ h1,
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 h1,
@@ -149,7 +149,7 @@ h2,
 @media (min-width: 1200px) {
   h2,
   .h2 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -730,7 +730,7 @@ progress {
 .row > * {
   flex-shrink: 0;
   width: 100%;
-  max-width: 100%;
+  /* max-width: 90%; */
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
@@ -4978,7 +4978,7 @@ fieldset:disabled .btn {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
+  /* padding: 1rem 1rem; */
 }
 
 .card-title {
@@ -8057,8 +8057,8 @@ fieldset:disabled .btn {
 }
 
 .py-4 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .py-5 {
@@ -8474,12 +8474,17 @@ fieldset:disabled .btn {
 .tech-fa {
   display: flex;
   justify-content: space-evenly;
-  max-width: 50%;
+  max-width: 60%;
   font-size: 1.8rem;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-evenly;
   align-items: flex-start;
+}
+
+.tech-fa-li {
+  list-style: none;
+  line-height: inherit;
 }
 
 .bg-opacity-100 {
@@ -11988,6 +11993,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
+  margin-bottom: 5rem;
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.3) 0%,
@@ -12015,9 +12021,16 @@ body {
 }
 .masthead h2,
 .masthead .h2 {
-  max-width: 20rem;
+  max-width: 30rem;
   font-size: 1rem;
 }
+
+.about-section h2,
+.about-section .h2 {
+  max-width: 30rem;
+  font-size: 1rem;
+}
+
 @media (min-width: 768px) {
   .masthead h1,
   .masthead .h1 {
@@ -12026,7 +12039,8 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .masthead {
+  .masthead,
+  .about-section {
     height: 100vh;
     padding: 0;
   }
@@ -12037,17 +12051,19 @@ body {
     letter-spacing: 0.8rem;
   }
   .masthead h2,
-  .masthead .h2 {
-    max-width: 100%;
-    font-size: 1.8rem;
+  .masthead .h2,
+  .about-section h2,
+  .about-section .h2 {
+    max-width: 90%;
+    font-size: 1.2rem;
   }
 }
 
 .about-section {
   position: relative;
   width: 100%;
-  height: auto;
-  font-size: 1.8rem;
+  /* height: 100vh; */
+  font-size: 1.2rem;
   padding-top: 5rem;
   /* background: linear-gradient(
     to bottom,
