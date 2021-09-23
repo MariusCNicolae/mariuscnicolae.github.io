@@ -638,7 +638,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .img-thumbnail {
@@ -1645,7 +1645,7 @@ progress {
 
   .col-xl-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 45%;
   }
 
   .col-xl-5 {
@@ -1665,7 +1665,7 @@ progress {
 
   .col-xl-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 55%;
   }
 
   .col-xl-9 {
@@ -8249,6 +8249,17 @@ fieldset:disabled .btn {
 .text-center-about {
   text-align: left !important;
 }
+
+.text-center-projects {
+  text-align: left !important;
+}
+
+.text-projects {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+  max-width: 90%;
+}
 .text-center {
   text-align: center !important;
 }
@@ -8485,6 +8496,16 @@ fieldset:disabled .btn {
 .tech-fa-li {
   list-style: none;
   line-height: inherit;
+}
+
+.techno {
+  border-radius: 3px;
+  border: 1.5px solid #64a19d;
+  padding: 0 0.3rem;
+}
+
+.techno-block {
+  padding: 5px 0;
 }
 
 .bg-opacity-100 {
@@ -10284,9 +10305,9 @@ fieldset:disabled .btn {
     margin-right: auto !important;
   }
 
-  .mb-lg-0 {
+  /* .mb-lg-0 {
     margin-bottom: 3rem !important;
-  }
+  } */
 
   .mb-lg-1 {
     margin-bottom: 0.25rem !important;
@@ -12041,7 +12062,7 @@ body {
 @media (min-width: 992px) {
   .masthead,
   .about-section {
-    height: 100vh;
+    height: 90vh;
     padding: 0;
   }
   .masthead h1,
