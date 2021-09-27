@@ -89,7 +89,7 @@
 }
 
 body {
-  margin: 10px;
+  margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -639,6 +639,8 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: 100%;
+  box-shadow: 5px 2px 8px rgb(10 10 0 / 10%);
+  border-radius: 5px;
 }
 
 .img-thumbnail {
@@ -722,6 +724,7 @@ progress {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) * -0.5);
@@ -1219,7 +1222,7 @@ progress {
 
   .col-md-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 25%;
   }
 
   .col-md-5 {
@@ -1443,11 +1446,15 @@ progress {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+    box-shadow: 5px 2px 8px rgb(10 10 0 / 50%);
+    border-radius: 5px;
   }
 
   .col-lg-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
+    box-shadow: 5px 2px 8px rgb(10 10 0 / 10%);
+    border-radius: 5px;
   }
 
   .col-lg-8 {
@@ -7947,7 +7954,7 @@ fieldset:disabled .btn {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 5rem !important;
 }
 
 .mb-auto {
@@ -8448,7 +8455,25 @@ fieldset:disabled .btn {
 
 .bg-black-projects {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+  background: linear-gradient(
+    to left,
+    #64a19d,
+    #64a19d 10%,
+    #eee 80%,
+    #64a19d 110%
+  );
+  /* background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important; */
+}
+
+.bg-black-projects-two {
+  --bs-bg-opacity: 1;
+  background: linear-gradient(
+    to right,
+    #64a19d,
+    #64a19d 10%,
+    #eee 80%,
+    #64a19d 110%
+  );
 }
 
 .bg-white {
@@ -8485,7 +8510,7 @@ fieldset:disabled .btn {
 .tech-fa {
   display: flex;
   justify-content: space-evenly;
-  max-width: 60%;
+  max-width: 50%;
   font-size: 1.8rem;
   flex-direction: row;
   flex-wrap: wrap;
@@ -10326,7 +10351,7 @@ fieldset:disabled .btn {
   }
 
   .mb-lg-5 {
-    margin-bottom: 3rem !important;
+    margin-bottom: 5rem !important;
   }
 
   .mb-lg-auto {
@@ -12109,7 +12134,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -12126,8 +12151,14 @@ body {
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 0 2rem 0 2rem;
+    /* border-left: 0.5rem solid #e9ecef; */
   }
+  /* @media (min-width: 992px) {
+    .projects-section .project-text-two {
+      padding: 0 2rem 0 2rem;
+      border-right: 0.5rem solid #e9ecef;
+    } */
   .projects-section .project-text hr {
     border-color: #64a19d;
     border-width: 0.25rem;
@@ -12136,12 +12167,12 @@ body {
 }
 
 .signup-section {
-  padding: 10rem 0 0;
+  padding: 5rem 0 0;
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.1) 0%,
-      rgba(0, 0, 0, 0.5) 75%,
-      #000 100%
+      rgba(0, 0, 0, 0.5) 30%,
+      #000 110%
     ),
     url('../assets/img/blue world map-unsplash.jpg');
   background-position: center;
